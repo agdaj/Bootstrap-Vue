@@ -25,6 +25,9 @@ Notes:
             <b-btn variant="success" v-on:click="currentPage = 'formCompPanels'">Form Showcase (Single Form)</b-btn>
             <b-btn variant="success" v-on:click="currentPage = 'formCompModals'">Form Showcase (Multiple Forms)</b-btn>
         </b-btn-group>
+        <b-btn-group class="my-1 mx-1">
+            <b-btn variant="secondary" v-on:click="currentPage = 'fastaFormComp'">FASTA Rule Showcase</b-btn>
+        </b-btn-group>
 
         <hr>
 
@@ -40,6 +43,7 @@ import modalsPage from './components/modalsPage.vue';
 import graphsPage from './components/graphsPage.vue';
 import formCompPanels from './components/formCompPanels.vue';
 import formCompModals from './components/formCompModals.vue';
+import fastaFormComp from './components/fastaFormComp.vue'
 
 export default {
     name: 'app',
@@ -54,7 +58,8 @@ export default {
         modalsPage,
         graphsPage,
         formCompPanels,
-        formCompModals
+        formCompModals,
+        fastaFormComp
     }
 }
 </script>
