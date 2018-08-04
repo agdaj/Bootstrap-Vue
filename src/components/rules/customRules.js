@@ -24,7 +24,7 @@ export const fastaRule = {
                 let currentFasta = fastaSeq[fastaSeq.length-1];
 
                 if (lines[i].startsWith('>')) {
-                    let fastaLabel = lines[i].substring(1);
+                    let fastaLabel = lines[i].substring(1).trim();
 
                     // Add the label to the current FASTA object (If a sequence was read before a label,
                     // resolve(false) should have already occurred
