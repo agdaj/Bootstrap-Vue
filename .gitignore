@@ -3,7 +3,7 @@ node_modules/
 dist/
 npm-debug.log
 yarn-error.log
-src/components/graveyardFiles/
+graveyardFiles/
 
 # Editor directories and files
 .idea
